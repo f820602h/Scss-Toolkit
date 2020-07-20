@@ -1,0 +1,22 @@
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  min-width: $windowMinWidth;
+  font-family: $fontFamily;
+  background: color(white);
+}
+.container {
+  @include container();
+}
+p {
+  color: color(content);
+  @include font(1, 7);
+}
+span{
+  color: color(content);
+  @include font(2,7);
+}
+a {
+  @extend %decoration;
+}
